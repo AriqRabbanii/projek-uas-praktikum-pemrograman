@@ -1,23 +1,32 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+// Struktur untuk menyimpan informasi barang
 typedef struct {
-    char ID[15];
-    char nama[20];
-    char kategori[20];
-    int stok;
+    char id_barang[20];
+    char nama_barang[50];
+    char kategori[30];
     float harga;
-}Barang;
+    int stok;
+} Barang;
 
-typedef struct{
-    char ID[10];
-    char nama[20];
+// Struktur untuk menyimpan informasi member
+typedef struct {
+    char id_member[20];
+    char nama[50];
     int poin;
-}member;
+} Member;
 
 int login();
-void pilihan();
-void tambahbarang();
-void kurangibarang();
+void menu_utama();
+void tambah_barang();
+void tambah_stok();
+void kurangi_stok();
+void lihat_barang();
+void pembayaran();
+void menu_utama();
+int hapus_barang();
+void tambah_member();
+
 
 #endif
