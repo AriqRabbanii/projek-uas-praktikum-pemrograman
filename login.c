@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <string.h>
+#include "header.h"
 
+int login() {
+    char username[50], password[50];
 
-int login(){
-    FILE *file = fopen( "login.txt", "r");
-    if(!file){
-        printf("file login.txt tidak ditemukan\n");
-        return 0;
+    // Username dan password yang valid
+    const char valid_username[] = "admin";
+    const char valid_password[] = "password123";
+
+    // Meminta input dari pengguna
+    printf("Masukkan username: ");
+    scanf("%s", username);
+    printf("Masukkan password: ");
+    scanf("%s", password);
+
+    // Memeriksa apakah username dan password cocok
+    if (strcmp(username, valid_username) == 0 && strcmp(password, valid_password) == 0) {
+        printf("Login berhasil!\n");
+        return 1;
+    } else {
+        printf("Username atau password salah!\n");
     }
-    char usn[50], passw[50], stored_usn[50], stored_passw[50];
-    printf("masukkan username: ");
-    scanf("%s", &usn);
-    printf("masukkan password: ");
-    scanf("%s", &passw);
 
-    while(fscanf(file, "%s %s",stored_usn, stored_passw) != EOF){
-        if(strcmp(usn, stored_usn) == 0 && strcmp(passw, stored_passw) == 0){
-            fclose(file);
-            return 1;
-        }
-    }
-    fclose(file);
-    printf("login gagal. username atau password salah:(");
     return 0;
 }
