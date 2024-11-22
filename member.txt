@@ -1,0 +1,12 @@
+001 | Ali | 500
+002 | Budi | 1000
+003 | Cici | 200
+004 | Dedi | 3000
+005 | Eva | 1500
+006 | Ariq | 200
+007 | Khalisa | 1976842784
+007 | Khalisa | 200
+007 | khalisa | 99
+008 | khalisha | 400
+344 | rausan | 900
+009 | isra | 200
