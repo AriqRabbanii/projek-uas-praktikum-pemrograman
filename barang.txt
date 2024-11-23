@@ -1,7 +1,0 @@
-001 | Laptop | Elektronik | 8000000 | 10
-002 | Kaos | Pakaian | 100000 | 20
-003 | Sepatu | Pakaian | 200000 | 15
-004 | Kulkas | Elektronik | 3000000 | 5
-005 | Smartphone | Elektronik | 5000000 | 8
-006 | Macbook | Elektronik | 30000000.00 | 4
-0009 | Pocari | Minuman | 7000.00 | 31
